@@ -1,0 +1,227 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@tailwind base; @tailwind components; @tailwind utilities;
+
+.page-background {
+  background-color: #0a192f;
+  /* This creates two things: 1. A subtle dot pattern. 2. Two large, faint color glows. */
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(204, 214, 246, 0.05) 1px, transparent 0),
+    radial-gradient(circle at 25% 75%, rgba(100, 255, 218, 0.05), transparent 40%),
+    radial-gradient(circle at 75% 25%, rgba(59, 130, 246, 0.05), transparent 40%);
+
+  background-size: 30px 30px, 200% 200%, 200% 200%;
+
+  /* This animation makes the color glows move slowly */
+  animation: moveGlow 25s linear infinite;
+}
+
+@keyframes moveGlow {
+  0% {
+    background-position: 0 0, 0 0, 0 0;
+  }
+  50% {
+    background-position: 0 0, 100% 100%, 100% 100%;
+  }
+  100% {
+    background-position: 0 0, 0 0, 0 0;
+  }
+}
+
+.image-blob {
+  background-size: cover;
+  background-position: center center;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  animation: morph 8s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  50% {
+    border-radius: 60% 40% 30% 70% / 60% 70% 30% 40%;
+  }
+  100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+}
+
+
+
+.floating-icon {
+  position: absolute;
+  animation: smooth-float infinite ease-in-out;
+}
+
+@keyframes smooth-float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px); /* Only moves up and down */
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* The container for our bento card */
+.bento-card {
+  position: relative;
+  overflow: hidden;
+  padding: 1px; /* This creates the space for the border */
+}
+
+/* The animated gradient border */
+.bento-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(
+    from 0deg at 50% 50%,
+    #64ffda, #3b82f6, #64ffda
+  );
+  animation: rotate-border 6s linear infinite;
+}
+
+/* The content that sits on top of the border */
+.bento-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #112240; /* The card's actual background color */
+  border-radius: inherit; /* Inherits the rounded corners */
+  padding: 1.5rem;
+  text-align: center;
+}
+
+@keyframes rotate-border {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.form-container {
+  position: relative;
+  padding: 2px; 
+  overflow: hidden;
+}
+
+.form-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%; 
+  height: 200%;
+  background: conic-gradient(
+    transparent,
+    transparent,
+    transparent,
+    #64ffda 
+  );
+  transform: translate(-50%, -50%);
+  animation: rotate-border 4s linear infinite;
+}
+
+@keyframes rotate-border {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.orb-container {
+  animation: spin-slow 40s linear infinite;
+}
+
+.orb-item {
+  animation: spin-slow 40s linear infinite reverse; /* Reverse animation to keep icons upright */
+}

@@ -1,0 +1,655 @@
+{
+  "hero": {
+    "name": "Manoj Aberathna",
+    "title": "AI/ML Engineer & Full-Stack Developer",
+    "bio": "I build intelligent AI solutions that solve real-world problems. Passionate about Machine Learning and Data Science, I love creating end-to-end AI applications   from image classification to automated meeting assistants. ",
+    "profileImage": "/profile.png",
+    "typewriterWords": [
+      "AI/ML Engineer",
+      "Full Stack Developer",
+      "Data Science Enthusiast"
+    ],
+    "cvFile": "projects/Manoj_Aberathna_CV.pdf",
+    "socialLinks": [
+      {
+        "platform": "GitHub",
+        "url": "https://github.com/manojaberathna24",
+        "icon": "FaGithub"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/in/manojaberathna/",
+        "icon": "FaLinkedin"
+      },
+      {
+        "platform": "Email",
+        "url": "mailto:sandaruwanctk@gmail.com",
+        "icon": "FiMail"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://www.instagram.com/YOUR_USERNAME",
+        "icon": "FaInstagram"
+      }
+    ]
+  },
+  "about": {
+    "introText": "I am a BSc (Hons) Information Technology undergraduate specializing in Artificial Intelligence, Machine Learning, and Data Science. Experienced in designing and deploying end-to-end AI solutions including image classification systems, intelligent chatbots, and automated data analysis platforms. Strong proficiency in Python, SQL, FastAPI, Streamlit, and deep learning frameworks, with a solid foundation in data preprocessing, model optimization, and system integration. Passionate about building scalable, data-driven applications that solve real-world problems.",
+    "philosophyData": [
+      {
+        "id": 1,
+        "icon": "FaRobot",
+        "title": "AI-First Approach",
+        "text": "I believe in leveraging AI to solve real-world problems and create intelligent applications.",
+        "order": 0
+      },
+      {
+        "id": 2,
+        "icon": "FaBrain",
+        "title": "Data-Driven Decisions",
+        "text": "I use machine learning to uncover patterns and make software smart enough to act on them.",
+        "order": 1
+      },
+      {
+        "id": 3,
+        "icon": "FaTools",
+        "title": "End-to-End Solutions",
+        "text": "From data preprocessing to model deployment, I build complete AI pipelines.",
+        "order": 2
+      },
+      {
+        "id": 4,
+        "icon": "FaInfinity",
+        "title": "Constant Learning",
+        "text": "Technology evolves fast — I stay ahead through continuous learning and experimentation.",
+        "order": 3
+      }
+    ],
+    "journeyData": [
+      {
+        "id": 1,
+        "year": "2020",
+        "title": "A/L Completed",
+        "description": "Completed G.C.E. Advanced Level in Technology Stream with 1 Credit Pass and 2 Simple Passes, discovering my passion for technology and programming.",
+        "order": 0
+      },
+      {
+        "id": 2,
+        "year": "2022 – Present",
+        "title": "University Education",
+        "description": "Enrolled in BSc (Hons) in Information Technology at Horizon Campus. Specializing in Artificial Intelligence, Machine Learning, and Data Science while building end-to-end AI solutions.",
+        "order": 1
+      },
+      {
+        "id": 3,
+        "year": "Now",
+        "title": "Building AI Solutions",
+        "description": "Designing and deploying intelligent AI applications — from vehicle damage detection systems to automated meeting assistants, combining web development with machine learning.",
+        "order": 2
+      }
+    ]
+  },
+  "skills": [
+    {
+      "id": 1,
+      "name": "Python",
+      "icon": "FaPython",
+      "color": "#3776AB",
+      "category": "Programming Languages",
+      "order": 0
+    },
+    {
+      "id": 2,
+      "name": "Java",
+      "icon": "FaJava",
+      "color": "#f89820",
+      "category": "Programming Languages",
+      "order": 1
+    },
+    {
+      "id": 3,
+      "name": "Kotlin",
+      "icon": "SiKotlin",
+      "color": "#7F52FF",
+      "category": "Programming Languages",
+      "order": 2
+    },
+    {
+      "id": 4,
+      "name": "JavaScript",
+      "icon": "SiJavascript",
+      "color": "#F7DF1E",
+      "category": "Programming Languages",
+      "order": 3
+    },
+    {
+      "id": 5,
+      "name": "C",
+      "icon": "SiC",
+      "color": "#A8B9CC",
+      "category": "Programming Languages",
+      "order": 4
+    },
+    {
+      "id": 6,
+      "name": "PHP",
+      "icon": "FaPhp",
+      "color": "#777BB4",
+      "category": "Programming Languages",
+      "order": 5
+    },
+    {
+      "id": 7,
+      "name": "HTML5",
+      "icon": "FaHtml5",
+      "color": "#E34F26",
+      "category": "Programming Languages",
+      "order": 6
+    },
+    {
+      "id": 8,
+      "name": "CSS3",
+      "icon": "FaCss3Alt",
+      "color": "#1572B6",
+      "category": "Programming Languages",
+      "order": 7
+    },
+    {
+      "id": 9,
+      "name": "TensorFlow",
+      "icon": "SiTensorflow",
+      "color": "#FF6F00",
+      "category": "AI/ML & Data Science",
+      "order": 8
+    },
+    {
+      "id": 10,
+      "name": "Keras",
+      "icon": "SiKeras",
+      "color": "#D00000",
+      "category": "AI/ML & Data Science",
+      "order": 9
+    },
+    {
+      "id": 11,
+      "name": "Scikit-learn",
+      "icon": "SiScikitlearn",
+      "color": "#F7931E",
+      "category": "AI/ML & Data Science",
+      "order": 10
+    },
+    {
+      "id": 12,
+      "name": "NumPy",
+      "icon": "SiNumpy",
+      "color": "#4D77CF",
+      "category": "AI/ML & Data Science",
+      "order": 11
+    },
+    {
+      "id": 13,
+      "name": "Pandas",
+      "icon": "SiPandas",
+      "color": "#150458",
+      "category": "AI/ML & Data Science",
+      "order": 12
+    },
+    {
+      "id": 14,
+      "name": "Streamlit",
+      "icon": "SiStreamlit",
+      "color": "#FF4B4B",
+      "category": "AI/ML & Data Science",
+      "order": 13
+    },
+    {
+      "id": 15,
+      "name": "Flask",
+      "icon": "SiFlask",
+      "color": "#000000",
+      "category": "Web & App Development",
+      "order": 14
+    },
+    {
+      "id": 16,
+      "name": "FastAPI",
+      "icon": "SiFastapi",
+      "color": "#009688",
+      "category": "Web & App Development",
+      "order": 15
+    },
+    {
+      "id": 17,
+      "name": "React",
+      "icon": "FaReact",
+      "color": "#61DAFB",
+      "category": "Web & App Development",
+      "order": 16
+    },
+    {
+      "id": 18,
+      "name": "React Native",
+      "icon": "FaReact",
+      "color": "#61DAFB",
+      "category": "Web & App Development",
+      "order": 17
+    },
+    {
+      "id": 19,
+      "name": "Flutter",
+      "icon": "FaFlutter",
+      "color": "#02569B",
+      "category": "Web & App Development",
+      "order": 18
+    },
+    {
+      "id": 20,
+      "name": "Node.js",
+      "icon": "FaNodeJs",
+      "color": "#339933",
+      "category": "Web & App Development",
+      "order": 19
+    },
+    {
+      "id": 21,
+      "name": "MySQL",
+      "icon": "SiMysql",
+      "color": "#4479A1",
+      "category": "Database & Cloud",
+      "order": 20
+    },
+    {
+      "id": 22,
+      "name": "Oracle",
+      "icon": "SiOracle",
+      "color": "#F80000",
+      "category": "Database & Cloud",
+      "order": 21
+    },
+    {
+      "id": 23,
+      "name": "Firebase",
+      "icon": "SiFirebase",
+      "color": "#FFCA28",
+      "category": "Database & Cloud",
+      "order": 22
+    },
+    {
+      "id": 24,
+      "name": "Supabase",
+      "icon": "SiSupabase",
+      "color": "#3ECF8E",
+      "category": "Database & Cloud",
+      "order": 23
+    },
+    {
+      "id": 25,
+      "name": "MongoDB",
+      "icon": "SiMongodb",
+      "color": "#47A248",
+      "category": "Database & Cloud",
+      "order": 24
+    },
+    {
+      "id": 26,
+      "name": "n8n",
+      "icon": "SiN8N",
+      "color": "#EA4B71",
+      "category": "Automation & Tools",
+      "order": 25
+    },
+    {
+      "id": 27,
+      "name": "Git",
+      "icon": "FaGit",
+      "color": "#F05032",
+      "category": "Automation & Tools",
+      "order": 26
+    },
+    {
+      "id": 28,
+      "name": "Postman",
+      "icon": "SiPostman",
+      "color": "#FF6C37",
+      "category": "Automation & Tools",
+      "order": 27
+    },
+    {
+      "id": 29,
+      "name": "Kaggle",
+      "icon": "FaKaggle",
+      "color": "#20BEFF",
+      "category": "Automation & Tools",
+      "order": 28
+    },
+    {
+      "id": 30,
+      "name": "Android",
+      "icon": "IoLogoAndroid",
+      "color": "#3DDC84",
+      "category": "Automation & Tools",
+      "order": 29
+    }
+  ],
+  "education": {
+    "educationData": [
+      {
+        "id": 1,
+        "title": "BSc (Hons) in Information Technology",
+        "institution": "Horizon Campus, Sri Lanka",
+        "date": "2022 – 2026",
+        "description": "Specializing in Artificial Intelligence, Machine Learning, and Data Science.",
+        "image": "/education/horizon.png",
+        "order": 0
+      },
+      {
+        "id": 2,
+        "title": "G.C.E. Advanced Level",
+        "institution": "Balalla U.B Wanninayake Navodya School",
+        "date": "2020",
+        "description": "Completed with 1 Credit Pass and 2 Simple Passes.",
+        "image": "/education/school.png",
+        "order": 1
+      }
+    ],
+    "certificationGroups": [
+      {
+        "id": 1,
+        "provider": "Oracle Certified",
+        "order": 0,
+        "certs": [
+          {
+            "id": 1,
+            "title": "AI Foundations Associate",
+            "image": "/certifications/oracle-ai.png",
+            "order": 0
+          },
+          {
+            "id": 2,
+            "title": "Generative AI Professional",
+            "image": "/certifications/oracle-genai.png",
+            "order": 1
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "provider": "Coursera",
+        "order": 1,
+        "certs": [
+          {
+            "id": 3,
+            "title": "Business Analysis & Process Management",
+            "image": "/certifications/coursera-business.png",
+            "order": 0
+          },
+          {
+            "id": 4,
+            "title": "Build a Free Website with WordPress",
+            "image": "/certifications/coursera-wordpress.png",
+            "order": 1
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "provider": "Simplilearn",
+        "order": 2,
+        "certs": [
+          {
+            "id": 5,
+            "title": "Data Analytics with Generative AI",
+            "image": "/certifications/simplilearn-data.png",
+            "order": 0
+          },
+          {
+            "id": 6,
+            "title": "Prompt Engineering with GitHub Copilot",
+            "image": "/certifications/simplilearn-prompt.png",
+            "order": 1
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "provider": "Kaggle",
+        "order": 3,
+        "certs": [
+          {
+            "id": 7,
+            "title": "Intro to Machine Learning",
+            "image": "/certifications/kaggle-ml.png",
+            "order": 0
+          },
+          {
+            "id": 8,
+            "title": "Pandas",
+            "image": "/certifications/kaggle-pandas.png",
+            "order": 1
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "provider": "TryHackMe",
+        "order": 4,
+        "certs": [
+          {
+            "id": 9,
+            "title": "Completed Rooms",
+            "image": "/certifications/tryhackme.png",
+            "order": 0
+          }
+        ]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "featured": true,
+      "title": "AutoXpert – Vehicle Damage Identification & Repair Shop Recommendation",
+      "images": [
+        "projects/autoxpert-1.jpg",
+        "projects/autoxpert-2.jpg",
+        "projects/autoxpert-3.jpg",
+        "projects/autoxpert-4.jpg"
+      ],
+      "description": "AI-based mobile app to detect vehicle damage from images, analyze tire condition, predict vehicle market prices, and recommend nearby repair shops. Built with deep learning models for accurate damage classification.",
+      "tags": [
+        "Python",
+        "TensorFlow",
+        "Keras",
+        "Flask",
+        "React Native",
+        "AI/ML"
+      ],
+      "github": "https://github.com/manojaberathna24/autoxpert-app",
+      "live": "https://github.com/manojaberathna24/autoxpert-app",
+      "order": 0
+    },
+    {
+      "id": 2,
+      "featured": false,
+      "title": "Gemini Meeting Bot – AI Meeting Assistant",
+      "images": [
+        "projects/meeting-bot-1.jpg",
+        "projects/meeting-bot-2.jpg"
+      ],
+      "description": "AI assistant that automatically joins Zoom, Google Meet, and Microsoft Teams meetings, transcribes conversations, generates summaries and action items, and delivers PDF reports via email. Uses speech-to-text and LLM for intelligent summarization.",
+      "tags": [
+        "Python",
+        "Gemini AI",
+        "OpenRouter",
+        "Playwright",
+        "SMTP",
+        "PDF Generation"
+      ],
+      "github": "https://github.com/manojaberathna24",
+      "live": "https://github.com/manojaberathna24",
+      "order": 1
+    },
+    {
+      "id": 3,
+      "featured": false,
+      "title": "AI Chatbot with OpenRouter",
+      "images": [
+        "projects/chatbot-1.jpg",
+        "projects/chatbot-2.jpg"
+      ],
+      "description": "Real-time conversational AI chatbot supporting contextual and personalized interactions using LLM APIs. Features memory management, image capture, and streaming responses.",
+      "tags": [
+        "Python",
+        "Flask",
+        "OpenRouter API",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "github": "https://github.com/manojaberathna24/OpenRouter-ChatBot",
+      "live": "https://github.com/manojaberathna24/OpenRouter-ChatBot",
+      "order": 2
+    },
+    {
+      "id": 4,
+      "featured": false,
+      "title": "DataSense AI – Automated Data Analysis & AutoML",
+      "images": [
+        "projects/datasense-1.jpg"
+      ],
+      "description": "End-to-end platform for automated data preprocessing, visualization, ML model training, and natural language querying for faster insights. Supports multiple ML algorithms.",
+      "tags": [
+        "Python",
+        "Pandas",
+        "Scikit-learn",
+        "AutoML",
+        "Streamlit"
+      ],
+      "github": "https://github.com/manojaberathna24/DatasetAutomation",
+      "live": "https://datasence.streamlit.app/",
+      "order": 3
+    },
+    {
+      "id": 5,
+      "featured": false,
+      "title": "Image Classification & Auto-Labeling System",
+      "images": [
+        "projects/imgclass-1.jpg",
+        "projects/imgclass-2.jpg"
+      ],
+      "description": "Deep learning based image classification system with automated labeling capabilities. Uses CNN architecture for accurate multi-class classification.",
+      "tags": [
+        "Python",
+        "TensorFlow",
+        "Keras",
+        "Deep Learning",
+        "CNN"
+      ],
+      "github": "https://github.com/manojaberathna24/ImageClassifiacation-Automation",
+      "live": "https://github.com/manojaberathna24/ImageClassifiacation-Automation",
+      "order": 4
+    },
+    {
+      "id": 6,
+      "featured": false,
+      "title": "AI Job Application Assistant",
+      "images": [
+        "projects/job-assistant-1.jpg"
+      ],
+      "description": "Streamlit application that helps users optimize their job applications using AI. Analyzes resumes and job descriptions to provide tailored recommendations.",
+      "tags": [
+        "Python",
+        "Streamlit",
+        "OpenAI",
+        "NLP"
+      ],
+      "github": "https://github.com/manojaberathna24/Job-assistent",
+      "live": "https://jobassistent.streamlit.app/",
+      "order": 5
+    },
+    {
+      "id": 7,
+      "featured": false,
+      "title": "MPS PetCare – AI-Powered Pet E-Commerce Platform",
+      "images": [
+        "projects/petcare-1.jpg",
+        "projects/petcare-2.jpg",
+        "projects/petcare-3.jpg",
+        "projects/petcare-4.jpg"
+      ],
+      "description": "Complete e-commerce platform for pet products with AI chatbot, user authentication, product catalog, pet adoption system, and admin dashboard. Features responsive design and modern UI.",
+      "tags": [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "AI Chatbot",
+        "Full-Stack"
+      ],
+      "github": "https://github.com/manojaberathna24/AiPowerd_Petshop",
+      "live": "https://serene-crumble-7a5b1f.netlify.app",
+      "order": 6
+    },
+    {
+      "id": 8,
+      "featured": false,
+      "title": "AI Email Agent Automation with n8n",
+      "images": [
+        "projects/n8n.png"
+      ],
+      "description": "Automated email workflow system built with n8n for intelligent email processing, auto-replies, and task automation. Integrates with multiple services.",
+      "tags": [
+        "n8n",
+        "Automation",
+        "AI Agent",
+        "Workflow"
+      ],
+      "github": "https://github.com/manojaberathna24/AiEmailAgent-N8N",
+      "live": "https://github.com/manojaberathna24/AiEmailAgent-N8N",
+      "order": 7
+    }
+  ],
+  "connect": {
+    "contactInfo": {
+      "email": "sandaruwanctk@gmail.com",
+      "phone": "+94 72 424 0616",
+      "location": "Colombo, Sri Lanka"
+    },
+    "contactLinks": [
+      {
+        "id": 1,
+        "icon": "FaGithub",
+        "title": "GitHub",
+        "href": "https://github.com/manojaberathna24",
+        "order": 0
+      },
+      {
+        "id": 2,
+        "icon": "FaLinkedin",
+        "title": "LinkedIn",
+        "href": "https://www.linkedin.com/in/manojaberathna/",
+        "order": 1
+      },
+      {
+        "id": 3,
+        "icon": "FiMail",
+        "title": "Email",
+        "href": "mailto:sandaruwanctk@gmail.com",
+        "order": 2
+      },
+      {
+        "id": 4,
+        "icon": "FiPhone",
+        "title": "Phone",
+        "href": "tel:+94724240616",
+        "order": 3
+      },
+      {
+        "id": 5,
+        "icon": "FaInstagram",
+        "title": "Instagram",
+        "href": "https://www.instagram.com/YOUR_USERNAME",
+        "order": 4
+      }
+    ]
+  }
+}

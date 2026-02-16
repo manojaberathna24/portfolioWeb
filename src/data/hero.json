@@ -1,0 +1,24 @@
+{
+    "name": "Manoj Aberathna",
+    "title": "AI/ML Engineer & Full-Stack Developer",
+    "bio": "Passionate about Machine Learning and Data Science, I love creating end-to-end AI applications from image classification to automated meeting assistants ",
+    "profileImage": "/profile.jpg",
+    "socialLinks": [
+        {
+            "platform": "GitHub",
+            "url": "https://github.com/manojaberathna24"
+        },
+        {
+            "platform": "LinkedIn",
+            "url": "https://www.linkedin.com/in/manojaberathna/"
+        },
+        {
+            "platform": "Email",
+            "url": "mailto:sandaruwanctk@gmail.com"
+        },
+        {
+            "platform": "Instagram",
+            "url": "https://www.instagram.com/YOUR_USERNAME"
+        }
+    ]
+}
