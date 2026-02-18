@@ -7,6 +7,7 @@ const ProjectsEditor = () => {
     const [saving, setSaving] = useState(false);
     const [msg, setMsg] = useState('');
     const [editingId, setEditingId] = useState(null);
+    const [tagInputs, setTagInputs] = useState({});
 
     useEffect(() => {
         api.getSection('projects').then(data => setProjects(data.sort((a, b) => a.order - b.order))).catch(() => setMsg('Error loading data'));
@@ -67,8 +68,45 @@ const ProjectsEditor = () => {
         setProjects(items);
     };
 
-    const handleTagInput = (index, value) => {
-        updateProject(index, 'tags', value.split(',').map(t => t.trim()).filter(Boolean));
+    // Tag management with proper chip-style input
+    const addTag = (index, tag) => {
+        const trimmed = tag.trim();
+        if (!trimmed) return;
+        const items = [...projects];
+        if (!items[index].tags.includes(trimmed)) {
+            items[index].tags = [...items[index].tags, trimmed];
+            setProjects(items);
+        }
+        setTagInputs({ ...tagInputs, [index]: '' });
+    };
+
+    const removeTag = (projectIndex, tagIndex) => {
+        const items = [...projects];
+        items[projectIndex].tags = items[projectIndex].tags.filter((_, i) => i !== tagIndex);
+        setProjects(items);
+    };
+
+    const handleTagKeyDown = (index, e) => {
+        const value = tagInputs[index] || '';
+        if (e.key === 'Enter' || e.key === ',') {
+            e.preventDefault();
+            addTag(index, value);
+        } else if (e.key === 'Backspace' && !value && projects[index].tags.length > 0) {
+            // Remove last tag on backspace if input is empty
+            removeTag(index, projects[index].tags.length - 1);
+        }
+    };
+
+    const handleTagChange = (index, value) => {
+        // If user pastes comma-separated values
+        if (value.includes(',')) {
+            const parts = value.split(',');
+            const last = parts.pop(); // keep last part in input (might be incomplete)
+            parts.forEach(part => addTag(index, part));
+            setTagInputs({ ...tagInputs, [index]: last.trim() });
+        } else {
+            setTagInputs({ ...tagInputs, [index]: value });
+        }
     };
 
     return (
@@ -134,18 +172,33 @@ const ProjectsEditor = () => {
                                     </div>
                                 </div>
 
+                                {/* Tags - Chip Style */}
                                 <div>
-                                    <label className="text-xs text-slate-400">Tags (comma separated)</label>
-                                    <input value={proj.tags.join(', ')} onChange={e => handleTagInput(i, e.target.value)} className="w-full bg-[#0a192f] border border-slate-600 rounded-lg p-2 text-white text-sm focus:outline-none mt-1" placeholder="Python, TensorFlow, Flask" />
+                                    <label className="text-xs text-slate-400">Tags (press Enter or comma to add)</label>
+                                    <div className="flex flex-wrap items-center gap-1.5 bg-[#0a192f] border border-slate-600 rounded-lg p-2 mt-1 min-h-[40px] focus-within:ring-2 focus-within:ring-[#64ffda]">
+                                        {proj.tags.map((tag, tagI) => (
+                                            <span key={tagI} className="inline-flex items-center gap-1 bg-[#64ffda]/15 text-[#64ffda] text-xs font-medium px-2.5 py-1 rounded-full border border-[#64ffda]/30">
+                                                {tag}
+                                                <button onClick={() => removeTag(i, tagI)} className="hover:text-white transition-colors"><FiX size={11} /></button>
+                                            </span>
+                                        ))}
+                                        <input
+                                            value={tagInputs[i] || ''}
+                                            onChange={e => handleTagChange(i, e.target.value)}
+                                            onKeyDown={e => handleTagKeyDown(i, e)}
+                                            placeholder={proj.tags.length === 0 ? "Type tag and press Enter..." : ""}
+                                            className="flex-1 min-w-[100px] bg-transparent text-white text-sm focus:outline-none"
+                                        />
+                                    </div>
                                 </div>
 
-                                {/* Images */}
+                                {/* Images - Accept all image types */}
                                 <div>
                                     <div className="flex items-center justify-between">
                                         <label className="text-xs text-slate-400">Images</label>
                                         <label className="flex items-center gap-1 text-[#64ffda] text-xs cursor-pointer hover:underline">
                                             <FiUpload size={12} /> Upload Images
-                                            <input type="file" accept="image/*" multiple onChange={e => handleImageUpload(i, e)} className="hidden" />
+                                            <input type="file" accept="image/jpeg,image/png,image/gif,image/webp,image/svg+xml,image/bmp,image/tiff,image/avif" multiple onChange={e => handleImageUpload(i, e)} className="hidden" />
                                         </label>
                                     </div>
                                     <div className="flex flex-wrap gap-2 mt-2">

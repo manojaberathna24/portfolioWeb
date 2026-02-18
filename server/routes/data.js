@@ -30,11 +30,11 @@ const upload = multer({
     storage,
     limits: { fileSize: 10 * 1024 * 1024 }, // 10MB
     fileFilter: (req, file, cb) => {
-        const allowed = /jpeg|jpg|png|gif|webp|svg|pdf/;
+        const allowed = /jpeg|jpg|png|gif|webp|svg|pdf|doc|docx|bmp|tiff|avif/;
         const ext = allowed.test(path.extname(file.originalname).toLowerCase());
         const mime = allowed.test(file.mimetype);
-        if (ext && mime) return cb(null, true);
-        cb(new Error('Only image and PDF files are allowed'));
+        if (ext || mime) return cb(null, true);
+        cb(new Error('File type not allowed'));
     }
 });
 
