@@ -34,7 +34,7 @@
     ]
   },
   "about": {
-    "introText": "I am a BSc (Hons) Information Technology undergraduate specializing in Artificial Intelligence, Machine Learning, and Data Science. Experienced in designing and deploying end-to-end AI solutions including image classification systems, intelligent chatbots, and automated data analysis platforms. Strong proficiency in Python, SQL, FastAPI, Streamlit, and deep learning frameworks, with a solid foundation in data preprocessing, model optimization, and system integration. Passionate about building scalable, data-driven applications that solve real-world problems.",
+    "introText": " I am a BSc (Hons) Information Technology undergraduate specializing in Artificial Intelligence, Machine Learning, and Data Science. Experienced in designing and deploying end-to-end AI solutions including image classification systems, intelligent chatbots, and automated data analysis platforms. Strong proficiency in Python, SQL, FastAPI, Streamlit, and deep learning frameworks, with a solid foundation in data preprocessing, model optimization, and system integration. Passionate about building scalable, data-driven applications that solve real-world problems.",
     "philosophyData": [
       {
         "id": 1,
@@ -61,7 +61,7 @@
         "id": 4,
         "icon": "FaInfinity",
         "title": "Constant Learning",
-        "text": "Technology evolves fast — I stay ahead through continuous learning and experimentation.",
+        "text": "Technology evolves fast - I stay ahead through continuous learning and experimentation.",
         "order": 3
       }
     ],
@@ -84,7 +84,7 @@
         "id": 3,
         "year": "Now",
         "title": "Building AI Solutions",
-        "description": "Designing and deploying intelligent AI applications — from vehicle damage detection systems to automated meeting assistants, combining web development with machine learning.",
+        "description": "Designing and deploying intelligent AI applications - from vehicle damage detection systems to automated meeting assistants, combining web development with machine learning.",
         "order": 2
       }
     ]

@@ -2,6 +2,7 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
+import fs from 'fs';
 import { fileURLToPath } from 'url';
 
 import authRoutes from './server/routes/auth.js';
@@ -33,10 +34,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // SPA fallback - all non-API routes serve index.html
 app.get('*', (req, res) => {
-    res.sendFile(path.join(distPath, 'index.html'));
+    const indexPath = path.join(distPath, 'index.html');
+    if (fs.existsSync(indexPath)) {
+        res.sendFile(indexPath);
+    } else {
+        res.status(200).send('Portfolio API server running. Build the frontend with: npm run build');
+    }
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`✅ Portfolio server running on http://localhost:${PORT}`);
     console.log(`📊 API available at http://localhost:${PORT}/api/data`);
     console.log(`🔐 Admin panel at http://localhost:${PORT}/admin`);

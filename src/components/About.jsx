@@ -58,12 +58,12 @@ const About = () => {
                 </motion.div>
 
                 {/* My Philosophy */}
-                <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-center max-w-5xl mx-auto mb-24">
-                    <h2 className="text-3xl font-bold mb-4">My Philosophy</h2>
-                    <p className="text-[#8892b0] mb-12">Technology should solve problems and make life easier. For me, that means:</p>
+                <div className="text-center max-w-5xl mx-auto mb-24">
+                    <motion.h2 className="text-3xl font-bold mb-4" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>My Philosophy</motion.h2>
+                    <motion.p className="text-[#8892b0] mb-12" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>Technology should solve problems and make life easier. For me, that means:</motion.p>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {sortedPhilosophy.map((item, index) => (
-                            <motion.div key={item.id || index} variants={itemVariants}>
+                            <motion.div key={item.id || index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: index * 0.15 }}>
                                 <Tilt className="p-1 rounded-xl" glareEnable={true} glareMaxOpacity={0.15} glareColor="#ffffff" glarePosition="all" tiltMaxAngleX={10} tiltMaxAngleY={10} perspective={1000}>
                                     <div className="bg-[#112240] p-6 rounded-lg text-center h-55 flex flex-col justify-center items-center shadow-lg ring-1 ring-slate-700">
                                         <div className="text-[#64ffda] mb-3">{getIcon(item.icon, 40)}</div>
@@ -74,7 +74,7 @@ const About = () => {
                             </motion.div>
                         ))}
                     </div>
-                </motion.div>
+                </div>
 
                 {/* My Developer Journey */}
                 <motion.div initial={{ y: 20, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} className="max-w-3xl mx-auto">
